@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR DASHBOARD - GREENTRAVEL</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	
+	<style>
+    @keyframes blink {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .blinking {
+      animation: blink 1s linear infinite;
+    }
+	</style>
+    <script src="ConnectionStatus.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="col-span-1">
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">SERVER CONNECTION</h2>
+                        <!-- Content for the first row in first column -->
+						
+						<div id="applicationImages" class="grid grid-cols-3 gap-4">
+								<!-- Server Image with Status Icon -->
+								<div id="serverStatus" class="relative">
+									<img src="images/server.svg" alt="Server" class="w-1/2 h-auto">
+									<div id="serverIcon" class="absolute bottom-0 left-0 p-2">
+										<svg id="serverSVG" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+											<circle cx="10" cy="10" r="12" />
+										</svg>
+									</div>
+								</div>
+								<!-- Application 2 -->
+								<div class="relative">
+									
+								</div>
+								<!-- Application 3 -->
+								<div class="relative">
+									
+								</div>
+							</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">APPLICATION STATUS</h2>
+                        <!-- Content for the second row in first column -->
+						 <!-- Application Images -->
+							<div id="applicationImages" class="grid grid-cols-3 gap-4">
+								<!-- Application 1 -->
+								<div class="relative">
+									<img src="images/bike.svg" alt="Application 1" class="w-1/2">
+									<div class="absolute bottom-0 left-0 p-2">
+										<svg id="bikeSVG" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+											<circle cx="10" cy="10" r="12" />
+										</svg>
+									</div>
+								</div>
+								<!-- Application 2 -->
+								<div class="relative">
+									<img src="images/ue5.svg" alt="Application 2" class="w-1/2">
+									<div class="absolute bottom-0 left-0 p-2">
+										<svg id="ue5SVG" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+											<circle cx="10" cy="10" r="12" />
+										</svg>
+									</div>
+								</div>
+								<!-- Application 3 -->
+								<div class="relative">
+									<img src="images/biopac.png" alt="Application 3" class="w-1/2">
+									<div class="absolute bottom-0 left-0 p-2">
+										<svg id="biopacSVG" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+											<circle cx="10" cy="10" r="12" />
+										</svg>
+									</div>
+								</div>
+							</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 3, Col 1</h2>
+                        <!-- Content for the third row in first column -->
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="restartCadenceScript()">
+                            TRY RESTARTING BIKE CLIENT
+                        </button>
+                        (Experimental)
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 4, Col 1</h2>
+                        <!-- Content for the fourth row in first column -->
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="TEST_FUNC1()">
+                            TEST 1
+                        </button>
+
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="TEST_FUNC2()">
+                            TEST 2
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 1, Col 2</h2>
+                        <!-- Content for the first row in second column -->
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 2, Col 2</h2>
+                        <!-- Content for the second row in second column -->
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 3, Col 2</h2>
+                        <!-- Content for the third row in second column -->
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-4 shadow rounded">
+                        <h2 class="text-lg font-semibold mb-2">Row 4, Col 2</h2>
+                        <!-- Content for the fourth row in second column -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script>
+		
+    </script>
+</body>
+</html>
+

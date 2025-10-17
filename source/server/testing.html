@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Python Script</title>
+</head>
+<body>
+    <h1>Control Python Script</h1>
+    <button onclick="startScript()">Start Script</button>
+    <button onclick="stopScript()">Stop Script</button>
+    <button onclick="checkStatus()">Check Status</button>
+    <div id="status"></div>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:8080');
+
+        ws.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+
+                if (data.type === 'script') {
+                    document.getElementById('status').innerText = `Status: ${data.status}, PID: ${data.pid || ''}, Code: ${data.code || ''}`;
+                }
+            } catch (error) {
+                console.error('Error parsing message from server:', error);
+                console.log(`Received non-JSON message: ${event.data}`);
+            }
+        };
+
+        function startScript() {
+            ws.send(JSON.stringify({ type: 'script', action: 'start' }));
+        }
+
+        function stopScript() {
+            ws.send(JSON.stringify({ type: 'script', action: 'stop' }));
+        }
+
+        function checkStatus() {
+            ws.send(JSON.stringify({ type: 'script', action: 'status' }));
+        }
+    </script>
+</body>
+</html>
