@@ -1,0 +1,45 @@
+Begin Object Class=/Script/AudioEditor.SoundCueGraphNode_Root Name="SoundCueGraphNode_Root_0"
+   NodePosY=-58
+   NodeGuid=AA5FF0BC42892B993D927FB13C935FD7
+   CustomProperties Pin (PinId=602A889E436F9D52AD33CC914C8D36AE,PinType.PinCategory="SoundNode",PinType.PinSubCategory="Root",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_2 D1A0F1064D122165BB9DE89C323B6F4A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_0"
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_0"
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_0"
+      SoundWaveAssetPtr="/Game/Audio/turmer.turmer"
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_0"'
+   End Object
+   SoundNode=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_0"'
+   NodePosX=-592
+   NodeGuid=4EDA985C4F1DBEBAEDB9C38FEDEB833A
+   CustomProperties Pin (PinId=1FE2CCCA477BB0C94EA1E797BD170785,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_1 513218B1490A04107F4BEA919F2351A6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_1"
+   Begin Object Class=/Script/Engine.SoundNodeLooping Name="SoundNodeLooping_0"
+   End Object
+   Begin Object Name="SoundNodeLooping_0"
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"SoundCueGraphNode_0.SoundNodeWavePlayer_0"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_1"'
+   End Object
+   SoundNode=/Script/Engine.SoundNodeLooping'"SoundNodeLooping_0"'
+   NodePosX=-368
+   NodePosY=-32
+   NodeGuid=89D9718F4C847F2E2046C6949E8A9EA8
+   CustomProperties Pin (PinId=CF229FCE45CBA4FFEE7903B4CF470FC9,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_2 584CF7A7458A70BCED1F6B98C81E77EC,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=513218B1490A04107F4BEA919F2351A6,PinName="Input",PinFriendlyName=NSLOCTEXT("", "76274E694FF6A058955396AB5D171A5C", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_0 1FE2CCCA477BB0C94EA1E797BD170785,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_2"
+   Begin Object Class=/Script/Engine.SoundNodeDoppler Name="SoundNodeDoppler_0"
+   End Object
+   Begin Object Name="SoundNodeDoppler_0"
+      ChildNodes(0)=/Script/Engine.SoundNodeLooping'"SoundCueGraphNode_1.SoundNodeLooping_0"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_2"'
+   End Object
+   SoundNode=/Script/Engine.SoundNodeDoppler'"SoundNodeDoppler_0"'
+   NodePosX=-192
+   NodePosY=-32
+   NodeGuid=3E6A511C4A0B3FC07E1A11972AE36A69
+   CustomProperties Pin (PinId=D1A0F1064D122165BB9DE89C323B6F4A,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_Root_0 602A889E436F9D52AD33CC914C8D36AE,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=584CF7A7458A70BCED1F6B98C81E77EC,PinName="Input",PinFriendlyName=NSLOCTEXT("", "3365770843760B370A58089E63C63C80", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_1 CF229FCE45CBA4FFEE7903B4CF470FC9,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
