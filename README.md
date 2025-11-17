@@ -12,8 +12,6 @@ This module is designed as a part of a larger project consisting of three differ
 3. **Biopac AcqKnowledge Software**: Records biofeedback data and syncs with the Unreal environment via message markers.
 4. **NodeMCU8266 Board**: Can send steering data to Unreal (currently not used but included in the code for future extensions).
 
-### Problem Solved
-
 There is no direct way to communicate between the Cadence Sensor, Unreal, Biopac, or the NodeMCU8266 board. This module facilitates communication using Websockets.
 
 ## Core Features
@@ -21,11 +19,8 @@ There is no direct way to communicate between the Cadence Sensor, Unreal, Biopac
 - Facilitates communication between Unreal, Garmin Cadence Sensor, Biopac, and NodeMCU8266 using Websockets.
 - Can be integrated into any Unreal project or any project needing communication with Cadence or Biopac.
 
-### Websockets
-
-Websockets provide full-duplex communication channels over a single TCP connection, enabling real-time data exchange between server and clients.
-
 ## Technical Details
+Network module takes care of the communication between different components of the VR system
 <img src="docs/images/VR_System.png" alt="System Diagram" width="600">
 
 ### Technologies and Libraries Used
