@@ -158,7 +158,7 @@ The Dashboard sends a "statuscheck" message every 10 seconds to the server, whic
 The server prints the number of clients connected and any messages passed between modules in the terminal.
 Unreal can print messages on the viewport for debugging for example. The Dashboard page uses this statuscheck responses to show which modules are currently connected to the server.
 
-![Dashboard](docs/Images/GTVL_Dashboard.gif)
+<img src="docs/images/GTVL_Dashboard.gif" alt="Dashboard" width="300">
 
 ### Performance Considerations
 No noticeable lag in message communication observed.
