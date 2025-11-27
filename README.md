@@ -1,5 +1,8 @@
 # GREENTRAVELVR
 Source code and documentation for the VR environment created for the GREENTRAVEL project. The development process of the GREENTRAVEL VR is detailed in the accompanying [technical report](https://doi.org/10.31885/2025.111301).
+
+https://github.com/user-attachments/assets/68ff8a09-0c1a-47e3-b3f3-3f0ebbf62129
+
 # Network Module
 
 ## Overview and Purpose
